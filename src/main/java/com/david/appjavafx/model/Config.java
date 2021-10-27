@@ -1,0 +1,45 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.david.appjavafx.model;
+
+/**
+ *
+ * @author David
+ */
+public class Config {
+
+    private String formatRelatorios = "html";
+    private String tipoGraficos = "pizza";
+
+    /**
+     * @return the formatRelatorios
+     */
+    public String getFormatRelatorios() {
+        return formatRelatorios;
+    }
+
+    /**
+     * @param formatRelatorios the formatRelatorios to set
+     */
+    public void setFormatRelatorios(String formatRelatorios) {
+        this.formatRelatorios = formatRelatorios;
+    }
+
+    /**
+     * @return the tipoGraficos
+     */
+    public String getTipoGraficos() {
+        return tipoGraficos;
+    }
+
+    /**
+     * @param tipoGraficos the tipoGraficos to set
+     */
+    public void setTipoGraficos(String tipoGraficos) {
+        this.tipoGraficos = tipoGraficos;
+    }
+
+}
