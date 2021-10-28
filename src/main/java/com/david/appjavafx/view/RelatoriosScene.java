@@ -13,7 +13,7 @@ import javafx.scene.layout.TilePane;
 
 public class RelatoriosScene extends AbstractScene {
 
-    private final Config config = new Config();
+    private final Config config = Config.getInstance();
 
     public RelatoriosScene(App app) {
         super(app);
@@ -21,6 +21,7 @@ public class RelatoriosScene extends AbstractScene {
         Label label = new Label("Formato de Relatórios = " + config.getFormatRelatorios());
         Button btnVoltar = new Button("Voltar");
         setRoot(new TilePane(label, btnVoltar));
+        btnVoltar.setOnAction(evento -> app.setScene(new MainScene(app)));
     }
 
 }

@@ -18,7 +18,8 @@ public class MainScene extends AbstractScene {
         Button btnConfig = new Button("Configurações");
         setRoot(new TilePane(btnRelatorios, btnConfig));
 
-//        btnRelatorios.setOnAction(app.setScene(new RelatoriosScene(app)));
+        btnRelatorios.setOnAction(evento -> app.setScene(new RelatoriosScene(app)));
+         btnConfig.setOnAction(evento -> app.setScene(new ConfigScene(app)));
     }
 
 }
